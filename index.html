@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center p-4">
+    <div class="flex items-center mb-4">
+        <span id="monthName" class="text-xl font-bold">January Task Tracker</span>
+        <i class="fas fa-pencil-alt cursor-pointer ml-2" onclick="editMonth()"></i>
+    </div>
+    <div class="table-container">
+        <table id="taskTable" class="border-collapse border border-black">
+            <thead>
+                <tr id="dateRow">
+                    <th class="border border-black px-2 py-1">Task</th>
+                    <!-- Dates will be dynamically added here -->
+                </tr>
+            </thead>
+            <tbody id="taskBody">
+                <!-- Tasks will be dynamically added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="border border-black px-2 py-1">Total task complete</td>
+                    <td id="totalTasks" class="border border-black px-2 py-1 text-center" colspan="32">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="mt-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="addTask()">Add Task</button>
+    </div>
+    <div class="mt-4">
+        <p>Record of previous month: <span id="previousRecord">0</span></p>
+        <p>Highest record: <span id="highestRecord">0</span> (<span id="highestRecordMonth">N/A</span>)</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
