@@ -1,4 +1,5 @@
 # Project Name: Task tracker system using AI
+This system is a browser-based tool that helps users manage and track tasks efficiently using localStorage. It dynamically adjusts for different months, tracks historical performance, and provides real-time updates. However, it lacks synchronization, multi-user support, and undo functionality. Future plans include fixing bugs and transforming it into a software or mobile application using Python and C++.
 <hr>
 
 ## Characteristics
